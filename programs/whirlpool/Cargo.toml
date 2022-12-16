@@ -15,10 +15,13 @@ cpi = ["no-entrypoint"]
 default = []
 
 [dependencies]
-anchor-lang = { git = "https://github.com/project-serum/anchor", tag = "v0.20.1", version = "0.20.1", package = "anchor-lang" }
-anchor-spl = { git = "https://github.com/project-serum/anchor", tag = "v0.20.1", version = "0.20.1", package = "anchor-spl" }
-spl-token = { version = "3.1.1", features = ["no-entrypoint"] }
-solana-program = "1.8.12"
+spl-token = { version = "^3.5.0", features = ["no-entrypoint"] }
+anchor-lang = { git = "https://github.com/jet-lab/anchor", branch = "master" }
+anchor-spl = { git = "https://github.com/jet-lab/anchor", branch = "master" }
+# anchor-lang = { git = "https://github.com/project-serum/anchor", tag = "v0.20.1", version = "0.20.1", package = "anchor-lang" }
+# anchor-spl = { git = "https://github.com/project-serum/anchor", tag = "v0.20.1", version = "0.20.1", package = "anchor-spl" }
+# spl-token = { version = "3.1.1", features = ["no-entrypoint"] }
+solana-program = "1.11"
 thiserror = "1.0"
 uint = { version = "0.9.1", default-features = false }
 borsh = "0.9.1"
